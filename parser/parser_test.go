@@ -3,7 +3,6 @@ package parser
 import (
 	"testing"
 
-	"github.com/hinsley/Gomonkeey/ast"
 	"github.com/hinsley/Gomonkey/ast"
 	"github.com/hinsley/Gomonkey/lexer"
 )
@@ -32,6 +31,13 @@ let foobar = 838383;
 		{"x"},
 		{"y"},
 		{"foobar"},
+	}
+
+	for i, tt := range tests {
+		stmt := program.Statements[i]
+		if !testLetStatement(t, stmt, tt.expectedIdentifier) {
+			return
+		}
 	}
 }
 
