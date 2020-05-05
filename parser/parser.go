@@ -1,12 +1,12 @@
 package parser
 
 import (
+	"fmt"
+	"strconv"
+
 	"github.com/hinsley/Gomonkey/ast"
 	"github.com/hinsley/Gomonkey/lexer"
 	"github.com/hinsley/Gomonkey/token"
-
-	"fmt"
-	"strconv"
 )
 
 const (

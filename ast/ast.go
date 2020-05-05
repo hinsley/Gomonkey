@@ -1,9 +1,9 @@
 package ast
 
 import (
-	"github.com/hinsley/Gomonkey/token"
-
 	"bytes"
+	
+	"github.com/hinsley/Gomonkey/token"
 )
 
 type Node interface {
